@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Beans Web</title>
+    
+    <link rel="stylesheet" href="https://nadir-software.github.io/nadircss/nadir.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <style>
+        .card-interactive {
+            padding-left: 10vw;
+            padding-right: 10vw;
+        }
+
+        .card-interactive:hover {
+            background-color: rgba(0, 89, 255, 0.5);
+            cursor: url('https://nadir-software.github.io/nadircss/Cursors/link-select.cur'), auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Hot Beans Web</h1>
+    </div>
+
+    <div class="column">
+        <div class="row">
+            <button onclick="location.href = 'about'" class="card card-interactive column">
+                <span style="font-size: 5rem;" class="material-symbols-rounded">info</span>
+                <h2>About Us</h2>
+            </button>
+
+            <button onclick="location.href = 'vacancies'" class="card card-interactive column">
+                <span style="font-size: 5rem;" class="material-symbols-rounded">work_alert</span>
+                <h2>Vacancies</h2>
+            </button>
+
+            <button onclick="location.href = 'courses'" class="card card-interactive column">
+                <span style="font-size: 5rem;" class="material-symbols-rounded">school</span>
+                <h2>Courses</h2>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
