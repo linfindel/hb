@@ -185,14 +185,14 @@ function uploadCV() {
                     document.getElementById("cv-text").innerText = "Upload complete";
                     document.getElementById("cv-icon").innerText = "cloud_done";
                     document.getElementById("cv").inert = "true";
+
+                    cvUploaded = true;
+
+                    if (human) {
+                        document.getElementById("action-card").classList.remove("card");
+                        document.getElementById("action-card").classList.add("card-success");
+                    }
                 }, 2500);
-
-                cvUploaded = true;
-
-                if (human) {
-                    document.getElementById("action-card").classList.remove("card");
-                    document.getElementById("action-card").classList.add("card-success");
-                }
             };
             reader.readAsDataURL(file); // Read the file as a data URL
         }
