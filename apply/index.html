@@ -15,33 +15,25 @@
         </div>
 
         <div class="row">
-            <a href="../">
-                <button tabindex="-99">
-                    <span class="material-symbols-rounded">home</span>
-                    Home
-                </button>
-            </a>
+            <button onclick="location.href = '../'">
+                <span class="material-symbols-rounded">home</span>
+                Home
+            </button>
             
-            <a href="../about">
-                <button tabindex="-99">
-                    <span class="material-symbols-rounded">info</span>
-                    About
-                </button>
-            </a>
+            <button onclick="location.href = '../about'">
+                <span class="material-symbols-rounded">info</span>
+                About
+            </button>
 
-            <a href="../vacancies">
-                <button tabindex="-99">
-                    <span class="material-symbols-rounded">work_alert</span>
-                    Vacancies
-                </button>
-            </a>
+            <button onclick="location.href = '../vacancies'">
+                <span class="material-symbols-rounded">work_alert</span>
+                Vacancies
+            </button>
             
-            <a href="../courses">
-                <button tabindex="-99">
-                    <span class="material-symbols-rounded">school</span>
-                    Courses
-                </button>
-            </a>
+            <button onclick="location.href = '../courses'">
+                <span class="material-symbols-rounded">school</span>
+                Courses
+            </button>
         </div>
     </div>
 
@@ -51,18 +43,18 @@
         <div class="toolbar-divider-horizontal"></div>
 
         <div class="row">
-            <input onchange="validate('forename')" type="text" name="forename" id="forename" placeholder="Forename" maxlength="255">
-            <input onchange="validate('surname')" type="text" name="surname" id="surname" placeholder="Surname" maxlength="255">
+            <input class="outline-none" onchange="validate('forename')" type="text" name="forename" id="forename" placeholder="Forename" maxlength="255">
+            <input class="outline-none" onchange="validate('surname')" type="text" name="surname" id="surname" placeholder="Surname" maxlength="255">
         </div>
 
         <div class="row">
-            <input onchange="validate('email')" type="text" name="email" id="email" placeholder="Email">
-            <input onchange="validate('phone')" type="number" name="phone" id="phone" placeholder="Phone number">
+            <input class="outline-none" onchange="validate('email')" type="text" name="email" id="email" placeholder="Email">
+            <input class="outline-none" onchange="validate('phone')" type="number" name="phone" id="phone" placeholder="Phone number">
         </div>
 
-        <input onchange="validate('job')" type="text" name="job" id="job" placeholder="Job title">
+        <input class="outline-none" onchange="validate('job')" type="text" name="job" id="job" placeholder="Job title">
 
-        <textarea onchange="validate('introduction')" name="introduction" id="introduction" cols="30" rows="10" placeholder="Write a brief introduction"></textarea>
+        <textarea class="outline-none" onchange="validate('introduction')" name="introduction" id="introduction" cols="30" rows="10" placeholder="Write a brief introduction"></textarea>
 
         <button onclick="verifyHuman()" id="human">
             <span id="human-icon" class="material-symbols-rounded">sensors</span>
