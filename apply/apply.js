@@ -58,6 +58,7 @@ var phoneValid = false;
 var jobValid = false;
 var introductionValid = false;
 var human = false;
+var cvUploaded = false;
 
 function validate(data) {
     if (data == "email") {
@@ -154,7 +155,42 @@ function verifyHuman() {
         document.getElementById("human").className = "button-success";
         document.getElementById("human-text").innerText = "Verified";
         document.getElementById("human-icon").innerText = "verified_user";
+
+        if (cvUploaded) {
+            document.getElementById("action-card").classList.remove("card");
+            document.getElementById("action-card").classList.add("card-success");
+        }
     }, 2000);
+}
+
+function uploadCV() {
+    let input = document.createElement('input');
+    input.type = 'file';
+    input.accept = '.pdf';
+    input.onchange = () => {
+        let file = input.files[0]; // Get the first selected file
+        if (file) {
+            let reader = new FileReader();
+            reader.onload = function (e) {
+                let fileURL = e.target.result;
+                console.log(fileURL);
+
+                document.getElementById("cv").className = "button-success";
+                document.getElementById("cv-text").innerText = "Upload complete";
+                document.getElementById("cv-icon").innerText = "cloud_done";
+                document.getElementById("cv").inert = "true";
+
+                cvUploaded = true;
+
+                if (human) {
+                    document.getElementById("action-card").classList.remove("card");
+                    document.getElementById("action-card").classList.add("card-success");
+                }
+            };
+            reader.readAsDataURL(file); // Read the file as a data URL
+        }
+    };
+    input.click();
 }
 
 const urlParams = new URLSearchParams(location.search);
