@@ -152,7 +152,7 @@ function verifyHuman() {
         document.getElementById("submit").style.opacity = "1";
         document.getElementById("submit").style.pointerEvents = "all";
 
-        document.getElementById("human").className = "button-success";
+        document.getElementById("human").className = "card-success";
         document.getElementById("human-text").innerText = "Verified";
         document.getElementById("human-icon").innerText = "verified_user";
 
@@ -181,7 +181,7 @@ function uploadCV() {
                 document.getElementById("cv").inert = "true";
 
                 setTimeout(() => {
-                    document.getElementById("cv").className = "button-success";
+                    document.getElementById("cv").className = "card-success";
                     document.getElementById("cv-text").innerText = "Upload complete";
                     document.getElementById("cv-icon").innerText = "cloud_done";
                     document.getElementById("cv").inert = "true";
