@@ -175,10 +175,17 @@ function uploadCV() {
                 let fileURL = e.target.result;
                 console.log(fileURL);
 
-                document.getElementById("cv").className = "button-success";
-                document.getElementById("cv-text").innerText = "Upload complete";
-                document.getElementById("cv-icon").innerText = "cloud_done";
+                document.getElementById("cv").className = "button-warning";
+                document.getElementById("cv-text").innerText = "Uploading...";
+                document.getElementById("cv-icon").innerText = "downloading";
                 document.getElementById("cv").inert = "true";
+
+                setTimeout(() => {
+                    document.getElementById("cv").className = "button-success";
+                    document.getElementById("cv-text").innerText = "Upload complete";
+                    document.getElementById("cv-icon").innerText = "cloud_done";
+                    document.getElementById("cv").inert = "true";
+                }, 2500);
 
                 cvUploaded = true;
 
