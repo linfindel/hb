@@ -191,6 +191,9 @@ function uploadCV() {
                     if (human) {
                         document.getElementById("action-card").classList.remove("card");
                         document.getElementById("action-card").classList.add("card-success");
+
+                        document.getElementById("submit").style.opacity = "1";
+                        document.getElementById("submit").style.pointerEvents = "all";
                     }
                 }, 2500);
             };
