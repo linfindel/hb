@@ -138,9 +138,7 @@ function validate(data) {
     }
 }
 
-function verifyHuman() {
-    human = true;
-    
+function verifyHuman() {    
     document.getElementById("human").blur();
     document.getElementById("human").inert = "true";
 
@@ -149,8 +147,7 @@ function verifyHuman() {
     document.getElementById("human-icon").innerText = "sensor_occupied";
 
     setTimeout(() => {
-        document.getElementById("submit").style.opacity = "1";
-        document.getElementById("submit").style.pointerEvents = "all";
+        human = true;
 
         document.getElementById("human").className = "card-success";
         document.getElementById("human-text").innerText = "Verified";
@@ -159,6 +156,9 @@ function verifyHuman() {
         if (cvUploaded) {
             document.getElementById("action-card").classList.remove("card");
             document.getElementById("action-card").classList.add("card-success");
+
+            document.getElementById("submit").style.opacity = "1";
+            document.getElementById("submit").style.pointerEvents = "all";
         }
     }, 2000);
 }
