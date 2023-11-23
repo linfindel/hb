@@ -166,7 +166,7 @@ function verifyHuman() {
 function uploadCV() {
     let input = document.createElement('input');
     input.type = 'file';
-    input.accept = '.pdf';
+    input.accept = '.pdf, .rtf, .doc, .docx, .html';
     input.onchange = () => {
         let file = input.files[0]; // Get the first selected file
         if (file) {
