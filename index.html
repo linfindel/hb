@@ -18,28 +18,7 @@
             background-color: rgba(0, 89, 255, 0.5);
             cursor: url('https://nadir-software.github.io/nadircss/Cursors/link-select.cur'), auto;
         }
-
-        .circle {
-            width: 10rem;
-            height: 10rem;
-
-            background-image: linear-gradient(90deg, blue,purple);
-
-            border-radius: 100%;
-
-            filter: blur(45px);
-
-            transition: 1s ease;
-
-            margin-top: 15rem;
-        }
     </style>
-
-    <script>
-        setInterval(() => {
-            document.getElementById("circle").style.width = `${Math.floor(Math.random() * 30)}vw`;
-        }, 1000);
-    </script>
 </head>
 <body>
     <div class="navbar">
@@ -64,7 +43,5 @@
             </button>
         </div>
     </div>
-
-    <div id="circle" class="circle"></div>
 </body>
 </html>
