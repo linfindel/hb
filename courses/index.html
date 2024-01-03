@@ -1,79 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Courses | Hot Beans Web</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses | Hot Beans Web</title>
 
-    <link rel="stylesheet" href="https://linfindel.github.io/nadircss/nadir.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="https://linfindel.github.io/nadircss/nadir.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
-    <div class="column" style="align-items: start; width: 100%;">
-        <div class="navbar">
-            <h1>Hot Beans Web</h1>
-        </div>
-
-        <div class="row">
-            <button onclick="location.href = '../'">
-                <span class="material-symbols-rounded">home</span>
-                Home
-            </button>
-            
-            <button onclick="location.href = '../about'">
-                <span class="material-symbols-rounded">info</span>
-                About
-            </button>
-
-            <button onclick="location.href = '../vacancies'">
-                <span class="material-symbols-rounded">work_alert</span>
-                Vacancies
-            </button>
-            
-            <button class="button-subtle" inert>
-                <span class="material-symbols-rounded">school</span>
-                Courses
-            </button>
-        </div>
+  <div class="column" style="align-items: start; width: 100%;">
+    <div class="navbar">
+      <h1>Hot Beans Web</h1>
     </div>
 
-    <div class="card column">
-        <h2>Courses</h2>
-        
-        <div class="row" style="align-items: stretch;">
-            <div id="html" class="card column">
-                <span class="material-symbols-rounded" style="font-size: 4rem;">html</span>
+    <div class="row">
+      <button onclick="location.href = '../'">
+        <span class="material-symbols-rounded">home</span>
+        Home
+      </button>
+            
+      <button onclick="location.href = '../about'">
+        <span class="material-symbols-rounded">info</span>
+        About
+      </button>
 
-                <p class="text-center" style="max-width: 7.5vw;">Learn the building blocks of the web and create your first website</p>
-
-                <button onclick="document.getElementById('html').classList.add('card-warning'); this.classList.add('button-warning'); document.getElementById('course-text-1').innerText = 'Loading...'; document.getElementById('course-icon-1').innerText = 'downloading'; location.href = 'https://www.codecademy.com/learn/learn-html'">
-                    <span id="course-icon-1" class="material-symbols-rounded">play_lesson</span>
-                    <span id="course-text-1">Start Course</span>
-                </button>
-            </div>
-
-            <div id="css" class="card column">
-                <span class="material-symbols-rounded" style="font-size: 4rem;">css</span>
-
-                <p class="text-center" style="max-width: 7.5vw;">Learn the styling of the web and learn to use Bootstrap</p>
-
-                <button onclick="document.getElementById('css').classList.add('card-warning'); this.classList.add('button-warning'); document.getElementById('course-text-2').innerText = 'Loading...'; document.getElementById('course-icon-2').innerText = 'downloading'; location.href = 'https://www.codecademy.com/learn/learn-css'">
-                    <span id="course-icon-2" class="material-symbols-rounded">play_lesson</span>
-                    <span id="course-text-2">Start Course</span>
-                </button>
-            </div>
-
-            <div id="js" class="card column">
-                <span class="material-symbols-rounded" style="font-size: 4rem;">javascript</span>
-
-                <p class="text-center" style="max-width: 7.5vw;">Learn the backend of the web and build interactivity into your website</p>
-
-                <button onclick="document.getElementById('js').classList.add('card-warning'); this.classList.add('button-warning'); document.getElementById('course-text-3').innerText = 'Loading...'; document.getElementById('course-icon-3').innerText = 'downloading'; location.href = 'https://www.codecademy.com/learn/introduction-to-javascript'">
-                    <span id="course-icon-3" class="material-symbols-rounded">play_lesson</span>
-                    <span id="course-text-3">Start Course</span>
-                </button>
-            </div>
-        </div>
+      <button onclick="location.href = '../vacancies'">
+        <span class="material-symbols-rounded">work_alert</span>
+        Vacancies
+      </button>
+            
+      <button class="button-subtle" inert>
+        <span class="material-symbols-rounded">school</span>
+        Courses
+      </button>
     </div>
+  </div>
+
+  <div class="card column">
+    <h2>Courses</h2>
+    
+    <div class="row" style="align-items: stretch;">
+      <div id="html" class="card column">
+        <span class="material-symbols-rounded" style="font-size: 4rem;">html</span>
+
+        <p class="text-center" style="max-width: 7.5vw;">Learn the building blocks of the web and create your first website</p>
+
+        <button onclick="document.getElementById('html').classList.add('card-warning'); this.classList.add('button-warning'); document.getElementById('course-text-1').innerText = 'Loading...'; document.getElementById('course-icon-1').innerText = 'downloading'; location.href = 'https://www.codecademy.com/learn/learn-html'">
+          <span id="course-icon-1" class="material-symbols-rounded">play_lesson</span>
+          <span id="course-text-1">Start Course</span>
+        </button>
+      </div>
+
+      <div id="css" class="card column">
+        <span class="material-symbols-rounded" style="font-size: 4rem;">css</span>
+
+        <p class="text-center" style="max-width: 7.5vw;">Learn the styling of the web and learn to use Bootstrap</p>
+
+        <button onclick="document.getElementById('css').classList.add('card-warning'); this.classList.add('button-warning'); document.getElementById('course-text-2').innerText = 'Loading...'; document.getElementById('course-icon-2').innerText = 'downloading'; location.href = 'https://www.codecademy.com/learn/learn-css'">
+          <span id="course-icon-2" class="material-symbols-rounded">play_lesson</span>
+          <span id="course-text-2">Start Course</span>
+        </button>
+      </div>
+
+      <div id="js" class="card column">
+        <span class="material-symbols-rounded" style="font-size: 4rem;">javascript</span>
+
+        <p class="text-center" style="max-width: 7.5vw;">Learn the backend of the web and build interactivity into your website</p>
+
+        <button onclick="document.getElementById('js').classList.add('card-warning'); this.classList.add('button-warning'); document.getElementById('course-text-3').innerText = 'Loading...'; document.getElementById('course-icon-3').innerText = 'downloading'; location.href = 'https://www.codecademy.com/learn/introduction-to-javascript'">
+          <span id="course-icon-3" class="material-symbols-rounded">play_lesson</span>
+          <span id="course-text-3">Start Course</span>
+        </button>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
